@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+}
+
+group = 'org.example'
+version = '1.0'
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_11
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // Можно добавить логгирование (например, SLF4J) — но пока без внешних либ
+}
+
+application {
+    mainClass = 'custompool.Main'
+}
